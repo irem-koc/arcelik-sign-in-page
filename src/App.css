@@ -1,5 +1,59 @@
 .App {
   text-align: center;
+
+}
+
+.top_image {
+  border-bottom: 1px solid #ddd;
+  padding: 30px 90px 75px;
+  position: relative;
+}
+.image{
+  background-color: transparent;
+    background-image: none;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.images {
+  display: flex;
+  flex-direction: column;
+}
+
+.arcelik {
+  display: block;
+  margin: 0 auto;
+  max-height: 40px;
+  max-width: 200px;
+  padding-top: 10px;
+  width: 140px;
+  height: 40px;
+}
+
+.undefined {
+  margin: 130px auto;
+  background-clip: content-box;
+  background-color: #fff;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  bottom: 0;
+  box-shadow: 0 0 0 15px;
+  color: #fff;
+  width: 85px;
+}
+
+.real_section {
+  background-color: white;
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  min-width: 300px;
+  min-height: 555px;
 }
 
 .App-logo {
@@ -32,6 +86,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

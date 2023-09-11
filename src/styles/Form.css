@@ -1,0 +1,12 @@
+.form-inner {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 42px 20px;
+}
+.text_input{
+    display: -webkit-flex;
+}

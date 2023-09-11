@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Footer from "./components/Footer";
+import Form from "./components/Form";
+import logo from "./images/arcelik_logo.png";
+import undefined from "./images/undefined_logo.png";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className="real_section">
+                <div className="top_image">
+                    <img
+                        width={"30%"}
+                        style={{ marginTop: "30px" }}
+                        src={logo}
+                        alt="arcelik_logo"
+                        className="arcelik"
+                    />
+                </div>
+                <div className="image">
+                    <img
+                        className="undefined"
+                        src={undefined}
+                        alt="undefined"
+                    />
+                </div>
+
+                <div className="form-section">
+                    <Form />
+                </div>
+                <Footer />
+            </div>
+        </div>
+    );
 }
 
 export default App;
