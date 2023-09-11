@@ -27,7 +27,6 @@ function App() {
                 <div className="form-section">
                     <Form />
                 </div>
-                <Footer />
             </div>
         </div>
     );

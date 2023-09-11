@@ -8,10 +8,21 @@ const Footer = () => {
             <a href="#s" className="a_tag" onClick={() => setClicked(!clicked)}>
                 {"Need help signing in?"}
             </a>
-
-            <a href="#s" className="a_tag">{"Forgot password?"}</a>
-            <a href="#s" className="a_tag">{"Unlock account?"}</a>
-            <a href="#s" className="a_tag">{"Help"}</a>
+            {clicked ? (
+                <div>
+                    <a href="#s" className="a_tag">
+                        {"Forgot password?"}
+                    </a>
+                    <a href="#s" className="a_tag">
+                        {"Unlock account?"}
+                    </a>
+                    <a href="#s" className="a_tag">
+                        {"Help"}
+                    </a>
+                </div>
+            ) : (
+                ""
+            )}
         </div>
     );
 };
